@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shaila Sharmin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="common.css" type="text/css" />
+	
+</head>
+
+<body>
+
+ <div id ="content">
+ <div id ="nav_bar">
+ <nav>
+ <strong>
+ <a href="index.html">Home</a> &nbsp;
+ <a href="profile.html">Profile</a> &nbsp;
+ <a href="album.html">Album</a> &nbsp;
+ <a href="family.html">Family</a>&nbsp;
+ <a href="favourites.html">Favourite</a>&nbsp;
+ </strong>
+ </nav>
+ </div>
+ 
+<div id ="img_mine">
+  <img src="Home/pp.jpg" width="400" height="550">
+ <div id ="info">
+  <p><span style="font-size: 50px"> Welcome!<br><br></span>
+   I'm <span style="font-size: 30px;color: #8A0F0D;">Shaila Sharmin</span><br>
+   <p style ="color: #636163">&mdash; A gradudate student at the Department of Computer Science and Engineering at IOWA State University</p></p> 
+   <hr><br>   
+		<div class="ul-social">
+	  <ul>
+		<li class="li-social-links">
+		  <a class="social" href="https://github.com/ShailaShova"  target="_blank"><img src="Home/GitHub.png" height="40" width="40"></a>
+		</li>
+		<li class="li-social-links">
+		  <a class="social" href="https://www.linkedin.com/in/shaila-shova-aab155a3/"  target="_blank" ><img src="Home/linkedin.png" height="40" width="40"></a>
+		</li>
+		<li class="li-social-links">
+		  <a class="social" href="https://twitter.com/ShailaShova"  target="_blank"><img src="Home/twitter.png" height="40" width="40"></a>
+		</li>
+		<li class="li-social-links">
+		  <a class="social" href="https://www.goodreads.com/user/show/63330612-shaila-sharmin"  target="_blank"><img src="Home/goodreads.png" height="40" width="40"></a>
+		</li>
+	  </ul>
+   </div>
+   <br>
+    
+   <!--<marquee behavior="slide" direction="left"><p style="background-color:beige;font-size:11px">" The fact that the poor are alive is clear proof of their ability " <br>
+   &mdash; Dr. Mohammad Yunus</p></marquee>-->
+   
+    <marquee direction="scroll">I am a simple human being and this is My homepage having a brief information about myself, my family and my surroundings. </marquee>
+   
+   </div>
+ </div>
+ 
+<footer>
+	<b>Copyright &copy; Shaila Sharmin Shova<br>
+	<a href="mailto:yourfirstname@yourlastname.com">Shaila@Sharmin.com</a><br><span id='date-time'></span></b>
+  </footer>
+ </div>  
+</body>
+<script>
+	var dt = new Date();
+	var formattedDate = dt.toLocaleString( { <!-- To show only date add "en-GB", after the first paranthesis -->
+	day: "numeric",
+	month: "short",
+	year: "numeric",
+	});
+	document.getElementById('date-time').innerHTML=formattedDate;
+	<!-- document.getElementById('date-time').innerHTML=dt will show the date/time and timezone as well-->
+</script>
+</html>

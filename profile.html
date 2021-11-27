@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shaila Sharmin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="common.css" type="text/css" />
+	
+</head>
+
+<body>
+<div id ="content">
+	<div id ="nav_bar">
+		<nav>
+		<strong>
+		<a href="index.html">Home</a> &nbsp;
+		<a href="profile.html">Profile</a> &nbsp;
+		<a href="album.html">Album</a> &nbsp;
+		<a href="family.html">Family</a>&nbsp;
+		<a href="favourites.html">Favourite</a>&nbsp;
+		</strong>
+	</nav>
+</div>
+
+<div class="flex-container">
+	<div class ="left">
+	<h1>Education</h1>
+	</div>
+	<div class ="right">
+		<div class="experience">
+			<h4>Ph.D in Computer Science<span class="job-title"></span><span class="duration">August 21-Present</span></h4>
+			<ul>
+			<li>Iowa State University</li>
+			</ul>
+        </div>
+		<div class="experience">
+			<h4>MSc in Computer Science<span class="job-title">CGPA 3.93</span><span class="duration">February, 16-December ,17</span></h4>
+			<ul>
+			<li>Jahangirnagar University<br> Dhaka, Bangladesh</li>
+			</ul>
+        </div>
+		<div class="experience">
+			<h4>BSc in Computer Science<span class="job-title">CGPA 3.73</span><span class="duration">January, 11-December ,15</span></h4>
+			<ul>
+			<li>Jahangirnagar University<br> Dhaka, Bangladesh</li>
+			</ul>
+        </div>
+	</div>
+</div>
+
+<div class="flex-container">
+	<div class ="left">
+	<h1>Experience</h1>
+	</div>
+	<div class ="right">
+		<div class="experience">
+            <h4>Iowa State University<span class="job-title">Teaching Assistant</span><span class="duration">August 21-Present</span></h4>
+			<ul>
+			<li>Conducting oneline helping recitation to the Course Introduction to Web Programming (COMS 106)</li>
+			<li>uided students to finish weekly Assignments, Projects, Graded assignments, and solved academic problems during office hours</li>
+			</ul>
+        </div>
+		<div class="experience">
+            <h4>Therap Bd (Ltd) <span class="job-title">Software Engineer II, QA</span><span class="duration">April,2019-June,2021</span></h4>
+			<ul>
+			<li>Data integrity and usage testing by manual test-cases, automation scripts and database queries</li>
+			<li> Migration testing in boarder scale </li>
+			<li>Mentoring junior QA engineers</li>
+			</ul>
+        </div>
+		<div class="experience">
+            <h4>Therap Bd (Ltd) <span class="job-title">Software Engineer, QA</span><span class="duration">July,17 - Mar,2019</span></h4>
+			<ul>
+			<li>Released Health Tracking Module</li>
+			<li>Migration testing in boarder scale </li>
+			<li>Carry out regression testing every time when changes are made to the code to fix bugs.</li>
+			</ul>
+        </div>
+		<div class="experience">
+            <h4>Therap Bd (Ltd) <span class="job-title">Associate Software Engineer, QA</span><span class="duration">June,16 - June,17</span></h4>
+			<ul>
+			<li>Backtracking activities  using log file to reproduce bug reported by customers</li>
+			<li>Data integrity testing with database queries</li>
+			</ul>
+        </div>
+		<div class="experience">
+            <h4>Therap Bd (Ltd) <span class="job-title">Associate Software Engineer, QA</span><span class="duration">June,16 - June,17</span></h4>
+			<ul>
+			<li>Automation the modules of Therap using Java and Selenium</li>
+			<li>Database design like Facebook</li>
+			<li>Bash programming for log file checking</li>
+			</ul>
+        </div>
+	</div>
+</div>
+
+	<footer>
+	Copyright &copy; Shaila Sharmin Shova<br>
+	<a href="mailto:yourfirstname@yourlastname.com">Shaila@Sharmin.com</a> <br><span id='date-time'></span>
+	</footer>
+  
+</div>  
+</body>
+<script>
+var dt = new Date();
+	var formattedDate = dt.toLocaleString( { <!-- To show only date add "en-GB", after the first paranthesis -->
+	day: "numeric",
+	month: "short",
+	year: "numeric",
+	});
+	document.getElementById('date-time').innerHTML=formattedDate;
+</script>
+</html>

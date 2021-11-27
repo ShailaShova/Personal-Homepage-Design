@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shaila Sharmin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="common.css" type="text/css" />
+	
+</head>
+
+<body>
+
+<div id ="content">
+<div id ="nav_bar">
+	<nav>
+		<strong>
+		<a href="index.html">Home</a> &nbsp;
+		<a href="profile.html">Profile</a> &nbsp;
+		<a href="album.html">Album</a> &nbsp;
+		<a href="family.html">Family</a>&nbsp;
+		<a href="favourites.html">Favourite</a>&nbsp;
+		</strong>
+	</nav>
+</div>
+
+<table>
+	<tr>
+	<td style='padding-left:100px;padding-top:20px;'><img src="Family/baba.jpg" alt="" width="280px" height="350px" /></td>
+	<td style='padding-left:100px;padding-top:20px;'><img src="Family/maa.jpg" alt="" width="280px" height="350px"/></td>
+	</tr>
+	<tr>
+	<td style='padding-left:100px;padding-top:20px;'><p class="family_member"/>My father was a government officer. We lost him a decade ago by a road accident</p></td>
+	<td style='padding-left:100px;padding-top:20px;'><p class="family_member">My mother was a school teacher. She had been in teaching profession for 33 years and then retired in 2010</p></td>
+	</tr>
+	<tr>
+	<td style="padding-left:35px"><img src="Family/bhaiya.jpg" alt="" width="250px" height="300px"/></td>
+	<td><img src="Family/Lima-apu.jpg" width="250px" height="300px"></td>
+	<td><img src="Family/Choto_apu.jpg" alt="" width="250px" height="300px"/></td>
+	</tr>
+	<tr>
+	<td style='padding-left:35px;'><p class="family_member">My one and only brother. He is a pharmacist and the vice president of Beacon Pharmaceuticals Ltd in Oncology Department </p></td>
+	<td><p class="family_member">My elder sister. She completed her Ph.D from Auburn University, Alabama in Microbiology and currently doing Post-doc in University of Maryland</p></td>
+	<td><p class="family_member">My immediate elder sister. She is a doctor by profession and designer by passion. She is a Pediatrician </p></td>
+	</tr>
+	<tr>
+	<td style="padding-left:35px"><img src="Family/dhrubo.jpg" alt="" width="250px" height="300px"/></td>
+	<td><img src="Family/Nakkhatra.jpg" alt="" width="250px" height="300px"/></td>
+	<td><img src="Family/Shayaan.jpg" alt="" width="250px" height="300px"/></td>
+	</tr>
+	<tr>
+	<td style='padding-left:35px;'><p class="family_member">This is Dhrubo. My first Nephew. Loves to play football and a die-hard supporter of Christiano Ronaldo</p></td>
+	<td><p class="family_member">This is Nakkhatra. We also lost him 6 years ago from a rare wilson disease.</p></td>
+	<td><p class="family_member">Shayaan. A joyful and talented boy. </p></td>
+	</tr>
+	<td style="padding-left:35px"><img src="Family/Sarina.jpg" alt="" width="250px" height="300px"/></td>
+	<td><img src="Family/Ania.jpg" alt="" width="250px" height="300px"/></td>
+	<td><img src="Family/Ayesha.jpg" alt="" width="250px" height="300px"/></td>
+	</tr>
+	<tr>
+	<td style='padding-left:35px;'><p class="family_member">This is Sarina Nowreen. My first Niece. </p></td>
+	<td><p class="family_member">We call her Ania though her official name is Samrina Nurtaz</p></td>
+	<td><p class="family_member">This is Ayesha Suhaira. The youngest of us.</p></td>
+	</tr>
+</table>	
+
+
+<footer>
+	<b>Copyright &copy; Shaila Sharmin Shova<br>
+	<a href="mailto:yourfirstname@yourlastname.com">Shaila@Sharmin.com</a><br> <span id='date-time'></span></b>
+</footer>
+
+</div> 
+<script>
+var dt = new Date();
+	var formattedDate = dt.toLocaleString( { <!-- To show only date add "en-GB", after the first paranthesis -->
+	day: "numeric",
+	month: "short",
+	year: "numeric",
+	});
+	document.getElementById('date-time').innerHTML=formattedDate;
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+body{
+	background-image:url(tt.v1.jpg);
+	background-repeat:no-repeat;
+}
+
+#content {
+	/*background-color: #CECFCB;*/
+	width: 1000px; 
+	/*margin-right: auto; 
+	/*margin-left: 150px;
+	margin-left:auto;*/
+	margin:auto;
+    border-color: silver;
+    border-width: 1px;
+    border-style: solid;
+	border-radius: 5px;
+	margin-top: 50px;
+	background-color:#dcf6f6 ;
+}
+
+#nav_bar{
+	/*background-color:  #D2B48C;*/
+	background-color:teal;
+    padding-top:20px;
+	width:1000px;
+	margin-top:0;
+	margin-bottom:0px;
+    display: flex;
+	height:100px;
+    justify-content: center;
+	
+}
+
+#nav_bar a {
+	font-size: 200%;
+	color: white;
+	padding: 14px 16px;
+	padding-top:500px;
+	text-decoration: none;
+  
+}
+
+#img_mine{
+	display: inline-block;
+	padding-left:75px;
+	padding-top:45px;
+}
+
+img{ 
+	border-radius: 12px;
+	box-shadow: 0 4px 8px 0 black;
+}
+	
+img:hover {
+	box-shadow: 0 0 2px 1px black;
+}
+
+#info{
+	display:inline;
+	float:right;
+	font-family: Interstate,arial,helvetica,sans-serif;
+	color:black;
+	width: 48%;
+	padding-right:40px;
+	margin-top:55px;
+	margin-left:2%;
+	margin-right:2%;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+/* p{
+	font-size:18px;
+	text-align: justify;
+	text-justify: inter-word;
+ }
+ */
+ marquee {
+        width: 100%;
+        padding: 10px 0;
+        background-color: lightblue;
+      }
+
+
+/*SOCIAL LINKS*/
+.ul-social {
+	text-align: center;
+	padding-left: 0;
+}
+
+.li-social-links {
+	display: inline-block;
+	list-style: none;
+}
+
+.social {
+	font-size: 2em;
+	color: white;
+	padding: 20px;
+}
+
+footer {
+	position: relative;
+	padding: 15px 10px 0px 10px;
+	bottom: 0;
+	width: 1000px; 
+	text-align:center;
+	/* Height of the footer*/ 
+	height: 70px;
+	/*background-color: #D2B48C;*/
+	background-color:teal;
+	/*border-top: 2px solid #8C3826;*/
+	border-top:2px solid white;
+	color:white;
+	overflow:auto;
+			
+}
+footer a{
+	color:white;
+}
+   
+.boxed {
+	border: 1px solid #8C3826;
+	background-color:#FAF9F6;
+	padding-right:20px;
+	font-weight:100;
+}
+header{
+	font-style:vertical-align: inherit;
+	font-weight: 200;
+    font-size: 2em;
+    color: #31b0d5;
+    text-transform: uppercase;
+    text-align: center;
+}
+.flex-container{
+    display : flex;
+    flex-direction : row;
+	width:100%;
+	border-top: 2px solid white;
+}
+.left{
+	width:30%;
+	/*background:#e7eee9;*/
+	background-color:lightblue;
+	color:white;
+	text-align:justify;
+	text-align:center;
+	
+}
+.right{
+     background:lightgreen;
+     text-align:justify;
+	 width:70%
+}
+
+.job-title {
+  float: right;
+  
+}
+
+.duration {
+    text-align:center;
+	padding-left:100px;
+	
+}
+.experience {
+  padding: .35rem 1.00rem;
+  background-color: white;
+  border-bottom: 1px solid white;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  background-color:beige;
+}
+
+.flex-container h1{
+	vertical-align: middle;
+	position:relative;
+	color:black;
+    height:100%;
+}
+
+.Content3{
+	background-image: url("background3.jpg");
+    height: 500px;
+    border-color: silver;
+    border-width: 2px;
+    border-style: solid;
+	margin-left: 5.6%;
+	margin-top: 2%;
+	margin-right: 5.6%;
+	text-align: center;
+}
+
+h2.contentTitleh2 {
+    margin-left: 5%;
+    display: inline;
+    font-size: 30px;
+    font-family: "Interstate Black",arial,helvetica,sans-serif;
+    color: #fb8737;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+/*Favourites*/
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #2cc16a;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+
+.active, .collapsible:hover {
+  /*background-color: #ccc;*/
+  background-color:beige;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1; 
+}
+
+.content ul {
+	list-style-type: square;
+}
+.content ul li {font-size:18px;
+	font-family:Times New Roman, Times, serif;
+}
+
+
+
+.favourite {
+  background-color: #2cc16a;
+  color: #444;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+table,th,tr,td {
+	width: 1000px;
+	}
+
+td{padding-left:15px;
+width: 1000px;} 
+td {overflow: hidden;}
+
+tr {
+	padding:0;
+	margin:0;
+	float:left;}
+
+td {
+	padding:0;
+	margin-left:0;
+}
+
+.family_member
+{
+	width:300px;
+	height:400;
+	font-weight:bold;
+	text-align: justify;
+	border-bottom:1px solid red;
+	}

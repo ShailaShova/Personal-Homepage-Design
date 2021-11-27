@@ -1,0 +1,89 @@
+* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	background-color: #2cc16a;
+	color: #444;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 15px;
+}
+
+
+.active, .collapsible:hover {
+	/*background-color: #ccc;*/
+	background-color:beige;
+}
+
+.content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1; 
+}
+
+.content ul {
+	list-style-type: square;
+}
+.content ul li {font-size:18px;
+	font-family:Times New Roman, Times, serif;
+}
+
+li:hover {
+	background-color: beige;
+	cursor:pointer;
+}
+
+.favourite {
+	background-color: #2cc16a;
+	color: #444;
+	cursor: pointer;
+	padding: 25px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+table,th,tr,td {
+	width: 1000px;
+	}
+
+td{
+	padding-left:15px;
+	width: 1000px;
+} 
+
+td {
+overflow: hidden;
+}
+
+tr {
+padding:0;
+margin:0;
+float:left;}
+
+td {padding:0;
+margin-left:0;
+}
+
+#myDIV{
+	display:none;
+	}
+#music{
+	display:none;}
+#video
+{
+	display:none;}
+
+.books_style {
+/*style="border-style: groove;margin-right:100px;margin-left:25px;font-weight:bold"*/
+	border-style: groove;
+	margin-right:100px;
+	margin-left:25px;
+	font-weight:bold;
+	}

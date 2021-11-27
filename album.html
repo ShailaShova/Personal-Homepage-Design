@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shaila Sharmin</title>
+	<meta charset="utf-8">
+	<link rel ="stylesheet" href="common.css" type="text/css">
+	<link rel="stylesheet" href="album.css" type="text/css" />
+	
+</head>
+
+<body>
+
+ <div id ="content">
+ <div id ="nav_bar">
+ <nav>
+	<strong>
+	<a href="index.html">Home</a> &nbsp;
+	<a href="profile.html">Profile</a> &nbsp;
+	<a href="album.html">Album</a> &nbsp;
+	<a href="family.html">Family</a>&nbsp;
+	<a href="favourites.html">Favourite</a>&nbsp;
+	</strong>
+	 </nav>
+ </div>
+
+	
+<table>
+	<tr>
+		<th> Family Members </th>
+	</tr>
+	<tr> <td>
+	<div class="slideshow-container">
+	
+	<div class="albumImages">
+    <img src="Album/baba_maa.jpg" style="width:100%">
+    <div class="text">My father and mother</div>
+	</div>
+	
+	<div class="albumImages">
+    <img src="Album/siblings.jpg" style="width:100%">
+    <div class="text">My siblings and cousines</div>
+	</div>
+
+	
+
+	<div class="albumImages">
+    <img src="Album/nephews.jpg" style="width:100%">
+    <div class="text">Nephews.. </div>
+	</div>
+	
+	<div class="albumImages">
+    <img src="Album/niece.jpg" style="width:100%">
+    <div class="text">Nices.. </div>
+	</div>
+	
+	<div class="albumImages">
+    <img src="Album/yongest_one.jpg" style="width:100%">
+    <div class="text">The youngest one of the family</div>
+	</div>
+	
+	<div class="albumImages">
+    <img src="Album/full_family.jpg" style="width:100%">
+    <div class="text">This is my full family.</div>
+	</div>
+  
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+	</div>
+	
+	<br>
+	
+	<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	</div>
+	
+	</td>
+	</tr>
+	
+	<th> Colleagues </th>
+	
+	<tr><td>
+	<div class="slideshow-container">
+	
+	<div class="albumImages">
+    <img src="Album/falgun.jpg" style="width:100%">
+    <div class="text">Pohela Falgun: Falgun is the bengali name for the Spring season. A mush awaited celebration</div>
+	</div>
+
+	<div class="albumImages">
+    <img src="Album/women's_day.jpg" style="width:100%">
+    <div class="text">Therap was celebrating International Women's Day for the first-time ever over the past 17 years</div>
+	</div>
+
+	<div class="albumImages">
+    <img src="Album/family_day.jpg" style="width:100%">
+    <div class="text">Therap Familuy Day: Introducing family members with the work environment and the people</div>
+	</div>
+  
+	<div class="albumImages">
+    <img src="Album/cultural_program.jpg" style="width:100%">
+    <div class="text">A small cultural program was performed by my colleages as well</div>
+	</div>
+	
+	<div class="albumImages">
+    <img src="Album/movie.jpg" style="width:100%">
+    <div class="text">Colleagues I adore the most. They became brother and sisters</div>
+	</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	</div>
+	
+	
+	</td>
+	</tr>
+</table>
+   
+<footer>
+	<b>Copyright &copy; Shaila Sharmin Shova<br>
+	<a href="mailto:yourfirstname@yourlastname.com">Shaila@Sharmin.com</a><br><span id='date-time'></span></b>
+</footer>
+
+</div>  
+</body>
+<script>
+
+var IndexOfSlide = 1;
+showSlides(IndexOfSlide);
+
+function plusSlides(n) {
+  showSlides(IndexOfSlide += n);
+}
+
+function currentSlide(n) {
+  showSlides(IndexOfSlide = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("albumImages");
+  
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {IndexOfSlide = 1}    
+  if (n < 1) {IndexOfSlide = slides.length}
+  
+  
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  
+  
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[IndexOfSlide-1].style.display = "block";  
+  dots[IndexOfSlide-1].className += " active";
+}
+
+var dt = new Date();
+	var formattedDate = dt.toLocaleString( { <!-- To show only date add "en-GB", after the first paranthesis -->
+	day: "numeric",
+	month: "short",
+	year: "numeric",
+	});
+	document.getElementById('date-time').innerHTML=formattedDate;
+	
+</script>
+</html>

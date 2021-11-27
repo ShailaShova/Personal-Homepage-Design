@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shaila Sharmin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="common.css" type="text/css" />
+	<link rel="stylesheet" href="favourites.css" type="text/css" />
+</head>
+
+<body>
+
+ <div id ="content">
+ <div id ="nav_bar">
+ <nav>
+	<strong>
+	<a href="index.html">Home</a> &nbsp;
+	<a href="profile.html">Profile</a> &nbsp;
+	<a href="album.html">Album</a> &nbsp;
+	<a href="family.html">Family</a>&nbsp;
+	<a href="favourites.html">Favourite</a>&nbsp;
+	</strong>
+	 </nav>
+ </div>
+
+	<button type="button" class="collapsible"><h2>My interests</h2></button>
+	<div class="content">
+	<ul> <b>
+	<li>Reading Story Books specially in the genre of Detective and Mystery.</li> &nbsp;
+	<li>Love to play Badminton</li> &nbsp;
+	<li>Collecting Key rings was once a passion for me </li> &nbsp;
+	<li>Roaming around here and there </li></b>
+	</ul>
+	</div>
+	
+	<table>
+	<p style="font-size:18px; font-weight: bold;margin-top:50px;text-align:justify"> I tried to list out one of my favourite books, movies and music. I like to read bengali literature the most.  Though, it's not easy to decide which one I liked the most, I am trying to list of them all (books/movies/music)that posses an impact on me </p>
+
+		
+			<th>
+				
+				<button onclick="myFunction()" class="favourite">My fabourite Book(s)</button><br>
+				
+			</th>
+			
+		
+			<br> <tr id="myDIV">
+				<td>
+				<img src="Favourite/book_1.jpg" width="280" height="400">
+				<p class='books_style'>This book was written by Humayun Ahmed and it is about the liberation war of Bangladesh</p></td>
+				<td><img src='Favourite/DaVinciCode.jpg'>
+				<p class='books_style'> The Vinci Code. This number 1 best selling book is worth the read</p></td>
+				<td><img src='Favourite/ma.jpg'>
+				<p class='books_style'>Maa, Written by Anisul Haque. A master piece book about the Liberation War of Bangladesh</p>
+				</td>
+				</tr>		
+			<th>
+				
+				<button onclick="video()" class="favourite">My fabourite Movie(s)</button> <br>
+				
+			</th>
+			<br>
+			<tr id="video">
+				<td>
+					<iframe width="420" height="315"  src="https://www.youtube.com/embed/z3biFxZIJOQ">
+				</iframe>
+				</td>
+				<td>
+				<iframe width="420" height="315" 
+					src="https://www.youtube.com/embed/i4nlR9WK6-k">
+				</iframe>
+				</td>
+			</tr>
+			
+			<th>
+				
+				<button onclick="music()" class="favourite">My fabourite Music(s)</button>
+				
+			</th>
+			<br>
+			<tr id ="music">
+				<td><p><b>Bayanno Tash - Bappa Majumdar</b></p>
+				<audio controls="controls">
+				 <source src="Bappa-Mujumdar.mp3" type="audio/mpeg">
+				<source src="melanie.ogg" type="audio/ogg">
+				</td>
+				<td> 
+				<p><b>Somoy Kate - Arnob</b></p>
+				<audio controls="controls">
+				<source src="Favourite/Arnob - Somoy Kate.mp3" type="audio/mpeg">
+				<source src="Favourite/Arnob - Somoy Kate.ogg" type="audio/ogg">
+				</td>
+				<td> 
+				<p><b>In The End  - Linkin Park</b></p>
+				<audio controls="controls">
+				<source src="Favourite/In The End (Official Video) - Linkin Park.mp3" type="audio/mpeg">
+				<source src="Favourite/Arnob - Somoy Kate.ogg" type="audio/ogg">
+				</td>
+				
+			</tr>
+			
+</table>
+	
+   
+<footer>
+	<b>Copyright &copy; Shaila Sharmin Shova<br>
+	<a href="mailto:yourfirstname@yourlastname.com">Shaila@Sharmin.com</a><br><span id='date-time'></b>
+</footer>
+
+</div>  
+</body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+ }
+ function video(){
+  var x = document.getElementById("video");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function music(){
+  var x = document.getElementById("music");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+var dt = new Date();
+	var formattedDate = dt.toLocaleString( { <!-- To show only date add "en-GB", after the first paranthesis -->
+	day: "numeric",
+	month: "short",
+	year: "numeric",
+	});
+	document.getElementById('date-time').innerHTML=formattedDate;
+	
+</script>
+</html>
